@@ -43,12 +43,16 @@ Windows and Unix. Just edit the pool and user settings before running!
 
 ### Secure connection
 Since version 1.0.0, the miner supports ZStratum protocol over TLS to
-encrypt the connection to the mining pool. Currently, this is only supported
-with flypool.
+encrypt the connection to the mining pool. 
+Currently, this is only supported with :
+ - https://zcash.flypool.org
+ - https://zec.poolto.be
 
 Use `zstratum+tls://` as prefix to the pool address, e.g.,
 ```
 $ ./optiminer-zcash -s zstratum+tls://eu1-zcash.flypool.org:3443 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
+or
+$ ./optiminer-zcash -s zstratum+tls://zec.poolto.be:8050 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
 ```
 
 ## Troubleshooting
